@@ -1,0 +1,33 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 3, Errors: 0, Skipped: 1, Time elapsed: 214.6 s <<< FAILURE! - in TestSuite
+GoogleLoginTestcase(qa.com.test.testcases.LoginTestcase)  Time elapsed: 9.604 s  <<< FAILURE!
+java.lang.NullPointerException: null value in entry: handle=null
+	at qa.com.test.testcases.LoginTestcase.GoogleLoginTestcase(LoginTestcase.java:60)
+
+RegisterManualEmailPasswordcorrect(qa.com.test.testcases.RegisterTestcase)  Time elapsed: 106.371 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='password-field1'] (tried for 100 second(s) with 500 milliseconds interval)
+	at qa.com.test.testcases.RegisterTestcase.RegisterManualEmailPasswordcorrect(RegisterTestcase.java:23)
+Caused by: org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EPLLP047', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\Swathi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58408}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 131d054331070360efd09164dbc9785e
+*** Element info: {Using=xpath, value=//*[@id='password-field1']}
+	at qa.com.test.testcases.RegisterTestcase.RegisterManualEmailPasswordcorrect(RegisterTestcase.java:23)
+
+afterTest(qa.com.test.testcases.RegisterTestcase)  Time elapsed: 110.409 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EPLLP047', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\Swathi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58408}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 131d054331070360efd09164dbc9785e
+

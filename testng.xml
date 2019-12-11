@@ -1,0 +1,32 @@
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="qa.com.test.testcases.RegisterTestcase"/>
+      <methods>
+      
+      
+      <include name= "RegisterManualEmailPasswordcorrect"/>
+       <include name="EmailFacebookRegister"/>
+        <include name="GoogleRegisterTestcase"/>
+      
+      </methods>
+      
+      
+      <class name="qa.com.test.testcases.LoginTestcase"/>
+      
+        <methods>
+      
+         
+      <include name= "LoginManualEmailPasswordcorrect"/>
+       <include name="EmailFacebookLogin"/>
+        <include name="GoogleLoginTestcase"/>
+        
+      
+      </methods>
+      
+      
+      
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

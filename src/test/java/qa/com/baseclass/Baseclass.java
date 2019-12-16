@@ -53,7 +53,7 @@ public class Baseclass {
 	public void beforeTest()
 	{
 		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://www.qa.moonlyte.com/");
 	}
 	
@@ -70,6 +70,6 @@ driver.close();
 	@AfterSuite
 	public void tearDownTest() {
     
-	//driver.close();
+	driver.quit();
 	}
 }

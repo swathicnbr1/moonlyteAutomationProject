@@ -10,15 +10,18 @@ public class BuyerRegistrationScenario extends Baseclass {
 	BuyerRegistrationPage pageObjBuyer1=new BuyerRegistrationPage();
 	
 
-	public void buyerRegistrationNonasanIndividual(String companyName, String sellerName) {
+	public void buyerRegistration(String companyName, String sellerName) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
 		
 		pageObjBuyer.BusinessButtonLinkClick();
 		
 		pageObjBuyer1.setCompanyName(companyName);
-		pageObjBuyer1.setSellerName(sellerName);
+		Thread.sleep(2000);
+		//pageObjBuyer1.setSellerName(sellerName);
 		pageObjBuyer1.clickProceed();
+		Thread.sleep(10000);
+		
 			
 	}
 	

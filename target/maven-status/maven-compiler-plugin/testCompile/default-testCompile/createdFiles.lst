@@ -3,6 +3,8 @@ qa\com\pages\BuyerRegistrationPage.class
 qa\com\test\scenarios\LoginScenario.class
 qa\com\test\testcases\RegisterTestcase.class
 qa\com\baseclass\Baseclass.class
+qa\com\test\testcases\TestData.class
+qa\com\test\testcases\CreateDemand.class
 qa\com\pages\BlogsLanding.class
 qa\com\pages\LoginPage.class
 qa\com\test\scenarios\BlogListingScenario.class
@@ -10,8 +12,10 @@ qa\com\test\testcases\BlogListingTestcase.class
 qa\com\test\testcases\SellerOnboardingTestcase.class
 qa\com\pages\LaunchPage.class
 qa\com\pages\RegistrationPage.class
+qa\com\pages\CreateDemandPage.class
 qa\com\pages\OnboardingPage.class
 qa\com\test\testcases\BuyerRegistrationTestcase.class
+qa\com\test\scenarios\CreateDemandScenarios.class
 qa\com\test\scenarios\RegisterScenario.class
 qa\com\test\scenarios\BuyerRegistrationScenario.class
 qa\com\test\scenarios\OnboardingScenario.class

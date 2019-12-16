@@ -14,6 +14,9 @@ import qa.com.test.scenarios.RegisterScenario;
 public class LoginTestcase extends Baseclass {
 
 	// MANUL LOGIN TESTCASE
+	
+	
+	@Test
 
 	public static void LoginManualEmailPasswordcorrect() throws InterruptedException, IOException {
 
@@ -22,7 +25,7 @@ public class LoginTestcase extends Baseclass {
 	}
 
 	
-	@Test
+	
 	
 	public static void LoginManualEmailPasswordOnboard() throws InterruptedException, IOException {
 
@@ -77,10 +80,24 @@ public class LoginTestcase extends Baseclass {
 //	fbReg.facebookRegister(googlemailId ,googlePassword);
 	 
 	 
+ }
 	 
 	 
+ public static void GoogleLoginBuyerRegistration() throws IOException {
+
+		
+	  TestData testData = new TestData();
+		ArrayList<String> getGoogleDataList = testData.dataSetUp("GoogleLoginCredentials","Login");
+
+	String googlemailId =  getGoogleDataList.get(1);
+	String googlePassword=getGoogleDataList.get(2);
+	LoginScenario googleLoginObj=new LoginScenario();
+	googleLoginObj.googleLogin(googlemailId, googlePassword);
+//	RegisterScenario fbReg = new RegisterScenario();
+//	fbReg.facebookRegister(googlemailId ,googlePassword);
 	 
 	 
+}	 
 	 
 	 
 	 
@@ -102,6 +119,6 @@ public class LoginTestcase extends Baseclass {
 		 * googleLoginObj.googleLogin(googlemailId, googlePassword);
 		 */
 
-	}
+	
 
 }

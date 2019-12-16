@@ -6,12 +6,15 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class TestData {
 
+	
 	public ArrayList<String> dataSetUp(String testcaseName, String testCaseMode) throws IOException {
 		ArrayList<String> saveDataList = new ArrayList<String>();
 		FileInputStream file = new FileInputStream("C:\\Users\\Swathi\\Documents\\testdata.xlsx");
@@ -45,9 +48,22 @@ public class TestData {
 					if (r.getCell(column).getStringCellValue().equalsIgnoreCase(testcaseName)) {
 						Iterator<Cell> cv = r.cellIterator();
 						while (cv.hasNext()) {
+							
+							Cell c=cv.next();
+							if(c.getCellTypeEnum()==CellType.STRING)
+							{
+											
 
-							saveDataList.add(cv.next().getStringCellValue());
+							saveDataList.add(c.getStringCellValue());
 
+						}
+							else
+							{
+								
+								saveDataList.add(NumberToTextConverter.toText(c.getNumericCellValue()));
+								
+							}
+							
 						}
 
 					}

@@ -21,7 +21,7 @@ public class RegisterScenario  extends Baseclass{
 	
 	public void manualRegister(String email, String pass) throws SQLException {
 		// TODO Auto-generated method stub
-
+ 
 	
 		pageObjLogin.registerButtonClick();
 		regPageObj.setEmail(email);
@@ -33,7 +33,7 @@ public class RegisterScenario  extends Baseclass{
 	}
 	
 	
-	@Test
+	
 	
 	//FACEBOOK REGISTER SCENARIOS
 	

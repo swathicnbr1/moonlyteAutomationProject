@@ -15,20 +15,20 @@ public class BuyerRegistrationTestcase extends Baseclass{
 	
 	
 	@Test
-	public static void buyerRegistration() throws InterruptedException, IOException {
+	public static void buyerRegistrationNonasIndividual() throws InterruptedException, IOException {
 
 		
-		  LoginTestcase.LoginManualEmailPasswordOnboard();
+		    LoginTestcase.EmailFacebookLogin();
 		    Thread.sleep(10000);
 			TestData testData = new TestData();
-			ArrayList<String> getOnboardDataList = testData.dataSetUp("BuyerRegistrationNonasanIndividual","BuyerRegistration");
+			ArrayList<String> getBuyerRegisterData = testData.dataSetUp("BuyerRegistrationNonasanIndividual","BuyerRegistration");
 
-			String companyName = getOnboardDataList.get(3);
-			String sellerName = getOnboardDataList.get(4);
+			String companyName = getBuyerRegisterData.get(3);
+			String sellerName = getBuyerRegisterData.get(4);
 			
 		
 			 BuyerRegistrationScenario buyerRegObj=new BuyerRegistrationScenario();
-		        buyerRegObj.buyerRegistrationNonasanIndividual(companyName, sellerName);
+		        buyerRegObj.buyerRegistration(companyName, sellerName);
 				
 		
 		/*
@@ -44,4 +44,7 @@ public class BuyerRegistrationTestcase extends Baseclass{
 		 */
 
 	}
+	
+	
+	
 }

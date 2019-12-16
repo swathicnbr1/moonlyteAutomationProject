@@ -16,7 +16,9 @@ public class OnboardingPage extends Baseclass {
 	By proceedButton;
 	By skillSelection;
 	By proceedButton1;
-	
+	By yearOfExperiencetext;
+	By proceedButton2;
+	By OnboardSucess;
 
 	
 	
@@ -26,9 +28,14 @@ public class OnboardingPage extends Baseclass {
 
 		name=By.xpath("//input[@type='text']");
 		proceedButton=By.xpath("//button[contains(text(),'PROCEED')]");
-		skillSelection=By.xpath("//*[@id='onboard-add-skills']/div[1]/mat-form-field/div/div[1]/div");
+		//skillSelection=By.xpath("//*[@id='onboard-add-skills']/div[1]/mat-form-field/div/div[1]/div");
+		skillSelection=By.id("mat-chip-list-input-2");
 		 proceedButton1=By.xpath("//button[@class='btn btn-primary btn-ml pulse']");
-		
+		 yearOfExperiencetext=By.cssSelector("input[type='number'");
+			proceedButton2=By.xpath("//button[contains(text(),'PROCEED')]");
+			OnboardSucess=By.xpath("//button[contains(text(),' YES')]");
+			
+			
 	}
 	
 	public void setName(String sellerName) {
@@ -36,9 +43,12 @@ public class OnboardingPage extends Baseclass {
 
 		//WebDriverWait some_element = new WebDriverWait(driver,200); 
 		
-		//some_element.until(ExpectedConditions.visibilityOfElementLocated(name)); 
-
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(name));
+		driver.findElement(name).clear();
+		
 		driver.findElement(name).sendKeys(sellerName);
+	
+	
 		//driver.findElement(name).sendKeys(sellerName + Keys.ARROW_DOWN.ENTER);
 
 
@@ -47,17 +57,25 @@ public class OnboardingPage extends Baseclass {
 public void clickOnboardProceed1()  {
 
 
-		
+	
 		WebElement ele = driver.findElement(proceedButton);
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", ele);
 		
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(skillSelection));
 
 	}
 	
-public void selectSkill(String skill) {
+public  void selectSkill(String skill) throws InterruptedException {
 	
-	driver.findElement(name).sendKeys(skill+ Keys.ARROW_DOWN.ENTER);
+    driver.findElement(skillSelection).sendKeys(skill);
+    Thread.sleep(2000);
+    driver.findElement(skillSelection).sendKeys(Keys.ARROW_DOWN);
+    Thread.sleep(2000);
+	driver.findElement(skillSelection).sendKeys(Keys.ENTER);
+
+    
+	//driver.findElement(skillSelection).sendKeys(skill+ Keys.ARROW_DOWN.ENTER);
 
 }
 
@@ -71,6 +89,31 @@ public void clickOnboardProceed2()  {
 	
 
 }
+public void getYearOfExperience(String yearOfExperience) {
+	
+	 driver.findElement(yearOfExperiencetext).sendKeys(yearOfExperience);
+
+}
+public void clickOnboardProceed3()  {
 
 
+	
+	WebElement ele = driver.findElement(proceedButton2);
+	JavascriptExecutor executor = (JavascriptExecutor)driver;
+	executor.executeScript("arguments[0].click();", ele);
+	
+
+}
+
+
+public void onboardSucessClick()  {
+
+
+	
+	WebElement ele = driver.findElement(OnboardSucess);
+	JavascriptExecutor executor = (JavascriptExecutor)driver;
+	executor.executeScript("arguments[0].click();", ele);
+	
+
+}
 }

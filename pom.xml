@@ -57,7 +57,7 @@
 		
 
 	</dependencies>
-	<build>
+	 <build>
 
 		<plugins>
 
@@ -71,12 +71,18 @@
 							<include>LoginTestcase.java</include>
 								
 					</includes>
-					<!-- <suiteXmlFiles> <suiteXmlFile>${testingFile}</suiteXmlFile> </suiteXmlFiles> -->
+					<suiteXmlFiles> <suiteXmlFile>${testingFile}</suiteXmlFile> </suiteXmlFiles>
 				</configuration>
 			</plugin>
+			
+			
+			
 
 		</plugins>
 
 	</build>
+	
+	
+	
 
 </project>

@@ -20,7 +20,7 @@ import java.sql.SQLException;
 
 public class RegistrationPage extends Baseclass {
 
-	WebDriverWait wait = new WebDriverWait(driver, 20);
+	WebDriverWait wait = new WebDriverWait(driver, 300);
 
 	By email;
 	By proceedButtonClick;
@@ -51,7 +51,9 @@ public class RegistrationPage extends Baseclass {
 		
 		email=By.xpath("//*[@id='emailInput']");
         setPassword = By.xpath("//*[@id='password-field1']");
-        createPasswordButton= By.cssSelector("button#mlui14");
+        createPasswordButton=By.xpath("//button[contains(text(),'PROCEED')]");
+		
+       
         registerOkPopup=By.xpath("//button[@class='swal2-confirm swal2-styled']");
         
         
@@ -106,7 +108,7 @@ public class RegistrationPage extends Baseclass {
 
 	public void clickRegisterOkPopoup() throws SQLException {
 
-		
+		driver.navigate().refresh();
 		WebElement ele = driver.findElement(registerOkPopup);
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", ele);
@@ -132,7 +134,7 @@ public class RegistrationPage extends Baseclass {
 	public void createPassword(String password)
 
 	{
-
+		
 		WebDriverWait some_element = new WebDriverWait(driver, 100);
 		some_element.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='password-field1']")));
 

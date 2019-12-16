@@ -18,15 +18,16 @@ public class SellerOnboardingTestcase  extends Baseclass{
 	public static void sellerOnboardingUsingDataBaseskill() throws InterruptedException, IOException {
 
 		
-	    LoginTestcase.LoginManualEmailPasswordOnboard();
+	    LoginTestcase.EmailFacebookLogin();
 	    Thread.sleep(10000);
 		TestData testData = new TestData();
 		ArrayList<String> getOnboardDataList = testData.dataSetUp("SellerOnboardingUsingDatabaseSkill","SellerOnboarding");
 
-		String sellerName = getOnboardDataList.get(3);
-		String skill = getOnboardDataList.get(4);
+		String sellerName = getOnboardDataList.get(1);
+		String skill = getOnboardDataList.get(2);
+		String yearOfExperience = getOnboardDataList.get(3);
 		OnboardingScenario pageObjOnboard = new OnboardingScenario();
-		 pageObjOnboard.sellerOnboarding(sellerName , skill);
+		 pageObjOnboard.sellerOnboarding(sellerName , skill, yearOfExperience);
 		
 
 		

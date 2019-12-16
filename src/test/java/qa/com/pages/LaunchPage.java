@@ -59,7 +59,8 @@ public class LaunchPage extends Baseclass{
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='mlui02']")));
 		
 		driver.findElement(signInLinkClick).click();
-		  
+		
+		 
 	}
 	
 	public void registerButtonClick() {

@@ -40,7 +40,8 @@ public class RegisterTestcase extends Baseclass {
 
 	
 	//FACEBOOK REGISTER TESTCASE
-   @Test
+	@Test
+   
 	public static void EmailFacebookRegister() throws IOException {
 		  TestData testData = new TestData();
 			ArrayList<String> getFacebookDataList = testData.dataSetUp("FacebookRegistrationCredentials","Registration");
@@ -56,21 +57,18 @@ public class RegisterTestcase extends Baseclass {
    	//GOOGLEREGISTER TESTCASE
    
 	
-	@Test 
+	@Test
 	public static void GoogleRegisterTestcase() throws IOException
 	{
 
 		  TestData testData = new TestData();
-			ArrayList<String> getGoogleDataList = testData.dataSetUp("GoogleRegistrationCredentials","Registration");
+	     ArrayList<String> getGoogleDataList = testData.dataSetUp("GoogleRegistrationCredentials","Registration");
 
 		String googlemailId =  getGoogleDataList.get(1);
 		String googlePassword=getGoogleDataList.get(2);
 		RegisterScenario googleLoginObj=new RegisterScenario();
 		googleLoginObj.googleRegister(googlemailId,googlePassword);
 
-		RegisterScenario fbReg = new RegisterScenario();
-		fbReg.facebookRegister(googlemailId ,googlePassword);
- 
 
 	}
 

@@ -15,8 +15,8 @@ public class RegisterTestcase extends Baseclass {
 
 	//MANUAL REGISTER TESTCASE	
 	
-	@Test
 	
+@Test
 	public static void RegisterManualEmailPasswordcorrect() throws InterruptedException, SQLException, IOException {
 
 		TestData testData = new TestData();
@@ -40,9 +40,9 @@ public class RegisterTestcase extends Baseclass {
 
 	
 	//FACEBOOK REGISTER TESTCASE
+	
 	@Test
-   
-	public static void EmailFacebookRegister() throws IOException {
+	public static void EmailFacebookRegister() throws IOException, InterruptedException {
 		  TestData testData = new TestData();
 			ArrayList<String> getFacebookDataList = testData.dataSetUp("FacebookRegistrationCredentials","Registration");
 
@@ -57,8 +57,8 @@ public class RegisterTestcase extends Baseclass {
    	//GOOGLEREGISTER TESTCASE
    
 	
-	@Test
-	public static void GoogleRegisterTestcase() throws IOException
+ @Test
+	public static void GoogleRegisterTestcase() throws IOException, InterruptedException
 	{
 
 		  TestData testData = new TestData();
@@ -66,8 +66,8 @@ public class RegisterTestcase extends Baseclass {
 
 		String googlemailId =  getGoogleDataList.get(1);
 		String googlePassword=getGoogleDataList.get(2);
-		RegisterScenario googleLoginObj=new RegisterScenario();
-		googleLoginObj.googleRegister(googlemailId,googlePassword);
+		RegisterScenario googleRegObj=new RegisterScenario();
+		googleRegObj.googleRegister(googlemailId,googlePassword);
 
 
 	}

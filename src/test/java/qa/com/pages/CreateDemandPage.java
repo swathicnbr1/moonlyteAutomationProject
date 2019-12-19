@@ -43,13 +43,12 @@ public class CreateDemandPage extends Baseclass{
 		
 	}
 	
-	public void getProjectTitle(String projectTitle)
+	public void getProjectTitle(String projectTitle) throws InterruptedException
 	{
-		//WebDriverWait some_element = new WebDriverWait(driver,100); 
-		//some_element.until(ExpectedConditions.visibilityOfElementLocated(projectTitletext)); 
+	
 
 		driver.findElement(projectTitletext).sendKeys(projectTitle);
-		
+	Thread.sleep(3000);
 		
 	}
 	

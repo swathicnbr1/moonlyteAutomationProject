@@ -19,6 +19,19 @@
        
     
       </methods>
+       <class name="qa.com.test.testcases.SellerOnboardingTestcase"/>
+      <methods>
+      <include name="sellerOnboardingUsingDataBaseskill"></include>
+  
+      </methods>
+      
+       <class name="qa.com.test.testcases.BuyerRegistrationTestcase"/>
+      <methods>
+      <include name="buyerRegistrationNonasIndividual"></include>
+  
+      </methods>
+      
+      
       
     </classes>
   </test> <!-- Test1 -->

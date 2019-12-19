@@ -19,6 +19,7 @@ public class OnboardingPage extends Baseclass {
 	By yearOfExperiencetext;
 	By proceedButton2;
 	By OnboardSucess;
+	By onboardComplete;
 
 	
 	
@@ -34,6 +35,7 @@ public class OnboardingPage extends Baseclass {
 		 yearOfExperiencetext=By.cssSelector("input[type='number'");
 			proceedButton2=By.xpath("//button[contains(text(),'PROCEED')]");
 			OnboardSucess=By.xpath("//button[contains(text(),' YES')]");
+			onboardComplete=By.xpath("//button[contains(text(),'PROCEED')]");
 			
 			
 	}
@@ -116,4 +118,15 @@ public void onboardSucessClick()  {
 	
 
 }
+public void clickOnboardComplete()  {
+
+
+	
+	WebElement ele = driver.findElement(onboardComplete);
+	JavascriptExecutor executor = (JavascriptExecutor)driver;
+	executor.executeScript("arguments[0].click();", ele);
+	
+
+}
+
 }

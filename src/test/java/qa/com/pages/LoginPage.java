@@ -113,6 +113,12 @@ public class LoginPage  extends Baseclass{
 		driver.findElement(FacebbookButton).click();
 
 		Set<String> handler = driver.getWindowHandles();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		Iterator<String> it=handler.iterator();
 
@@ -155,17 +161,18 @@ public class LoginPage  extends Baseclass{
 	
 	//Google login 
 	
-	public void googleButtonClick()
+	public void googleButtonClick() 
 	{
 	
 		driver.findElement(googleButton).click();
 		
 		
 		Set<String> handler = driver.getWindowHandles();
+	
 
 		Iterator<String> it=handler.iterator();
 
-		String parentWindowId=it.next();
+	    parentWindowId=it.next();
 		String childWindowId=it.next();
 
 		driver.switchTo().window(childWindowId);
@@ -208,7 +215,7 @@ public class LoginPage  extends Baseclass{
 		WebElement ele = driver.findElement(googlePasswordNext);
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", ele);
-		//driver.switchTo().window(parentWindowId);
+		driver.switchTo().window(parentWindowId);
 	
 	}
 	

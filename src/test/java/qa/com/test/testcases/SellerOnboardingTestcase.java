@@ -18,7 +18,7 @@ public class SellerOnboardingTestcase  extends Baseclass{
 	public static void sellerOnboardingUsingDataBaseskill() throws InterruptedException, IOException {
 
 		
-	    LoginTestcase.EmailFacebookLogin();
+	    LoginTestcase.LoginManualEmailPasswordOnboard();
 	    Thread.sleep(10000);
 		TestData testData = new TestData();
 		ArrayList<String> getOnboardDataList = testData.dataSetUp("SellerOnboardingUsingDatabaseSkill","SellerOnboarding");

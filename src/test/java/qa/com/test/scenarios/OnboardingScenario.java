@@ -30,6 +30,8 @@ public class OnboardingScenario extends Baseclass{
 		Thread.sleep(2000);
 		PageObj2.onboardSucessClick();
 		Thread.sleep(2000);
+		PageObj2.clickOnboardComplete();
+		Thread.sleep(2000);
 		
 	}
 	

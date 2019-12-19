@@ -18,4 +18,5 @@ qa\com\test\testcases\BuyerRegistrationTestcase.class
 qa\com\test\scenarios\CreateDemandScenarios.class
 qa\com\test\scenarios\RegisterScenario.class
 qa\com\test\scenarios\BuyerRegistrationScenario.class
+qa\com\test\testcases\SellerVerification.class
 qa\com\test\scenarios\OnboardingScenario.class

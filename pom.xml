@@ -71,7 +71,7 @@
 							<include>LoginTestcase.java</include>
 								
 					</includes>
-					<suiteXmlFiles> <suiteXmlFile>${testingFile}</suiteXmlFile> </suiteXmlFiles>
+					<suiteXmlFiles> <suiteXmlFile>testng.xml</suiteXmlFile> </suiteXmlFiles>
 				</configuration>
 			</plugin>
 			

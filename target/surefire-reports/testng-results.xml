@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="306582" started-at="2019-12-19T04:12:27Z" finished-at="2019-12-19T04:17:33Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="306582" started-at="2019-12-19T04:12:27Z" finished-at="2019-12-19T04:17:33Z">
+      <class name="qa.com.test.testcases.RegisterTestcase">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:qa.com.test.testcases.RegisterTestcase@6b143ee9]" name="setupTest" is-config="true" duration-ms="381" started-at="2019-12-19T09:42:26Z" finished-at="2019-12-19T09:42:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:qa.com.test.testcases.RegisterTestcase@6b143ee9]" name="beforeTest" is-config="true" duration-ms="9236" started-at="2019-12-19T09:42:27Z" finished-at="2019-12-19T09:42:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="RegisterManualEmailPasswordcorrect()[pri:0, instance:qa.com.test.testcases.RegisterTestcase@6b143ee9]" name="RegisterManualEmailPasswordcorrect" duration-ms="24889" started-at="2019-12-19T09:42:36Z" finished-at="2019-12-19T09:43:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterManualEmailPasswordcorrect -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:qa.com.test.testcases.RegisterTestcase@6b143ee9]" name="afterTest" is-config="true" duration-ms="211" started-at="2019-12-19T09:43:01Z" finished-at="2019-12-19T09:43:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:qa.com.test.testcases.RegisterTestcase@6b143ee9]" name="beforeTest" is-config="true" duration-ms="8517" started-at="2019-12-19T09:43:01Z" finished-at="2019-12-19T09:43:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="EmailFacebookRegister()[pri:0, instance:qa.com.test.testcases.RegisterTestcase@6b143ee9]" name="EmailFacebookRegister" duration-ms="18698" started-at="2019-12-19T09:43:09Z" finished-at="2019-12-19T09:43:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmailFacebookRegister -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:qa.com.test.testcases.RegisterTestcase@6b143ee9]" name="afterTest" is-config="true" duration-ms="23" started-at="2019-12-19T09:43:28Z" finished-at="2019-12-19T09:43:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:qa.com.test.testcases.RegisterTestcase@6b143ee9]" name="beforeTest" is-config="true" duration-ms="8215" started-at="2019-12-19T09:43:28Z" finished-at="2019-12-19T09:43:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="GoogleRegisterTestcase()[pri:0, instance:qa.com.test.testcases.RegisterTestcase@6b143ee9]" name="GoogleRegisterTestcase" duration-ms="40545" started-at="2019-12-19T09:43:36Z" finished-at="2019-12-19T09:44:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleRegisterTestcase -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:qa.com.test.testcases.RegisterTestcase@6b143ee9]" name="afterTest" is-config="true" duration-ms="1459" started-at="2019-12-19T09:44:17Z" finished-at="2019-12-19T09:44:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:qa.com.test.testcases.RegisterTestcase@6b143ee9]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2019-12-19T09:47:33Z" finished-at="2019-12-19T09:47:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- qa.com.test.testcases.RegisterTestcase -->
+      <class name="qa.com.test.testcases.LoginTestcase">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:qa.com.test.testcases.LoginTestcase@54a097cc]" name="beforeTest" is-config="true" duration-ms="8520" started-at="2019-12-19T09:44:18Z" finished-at="2019-12-19T09:44:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="LoginManualEmailPasswordcorrect()[pri:0, instance:qa.com.test.testcases.LoginTestcase@54a097cc]" name="LoginManualEmailPasswordcorrect" duration-ms="13178" started-at="2019-12-19T09:44:27Z" finished-at="2019-12-19T09:44:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginManualEmailPasswordcorrect -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:qa.com.test.testcases.LoginTestcase@54a097cc]" name="afterTest" is-config="true" duration-ms="80" started-at="2019-12-19T09:44:40Z" finished-at="2019-12-19T09:44:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:qa.com.test.testcases.LoginTestcase@54a097cc]" name="beforeTest" is-config="true" duration-ms="7658" started-at="2019-12-19T09:44:40Z" finished-at="2019-12-19T09:44:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="EmailFacebookLogin()[pri:0, instance:qa.com.test.testcases.LoginTestcase@54a097cc]" name="EmailFacebookLogin" duration-ms="21107" started-at="2019-12-19T09:44:48Z" finished-at="2019-12-19T09:45:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmailFacebookLogin -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:qa.com.test.testcases.LoginTestcase@54a097cc]" name="afterTest" is-config="true" duration-ms="4141" started-at="2019-12-19T09:45:09Z" finished-at="2019-12-19T09:45:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:qa.com.test.testcases.LoginTestcase@54a097cc]" name="beforeTest" is-config="true" duration-ms="8052" started-at="2019-12-19T09:45:13Z" finished-at="2019-12-19T09:45:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="GoogleLoginTestcase()[pri:0, instance:qa.com.test.testcases.LoginTestcase@54a097cc]" name="GoogleLoginTestcase" duration-ms="21061" started-at="2019-12-19T09:45:21Z" finished-at="2019-12-19T09:45:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleLoginTestcase -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:qa.com.test.testcases.LoginTestcase@54a097cc]" name="afterTest" is-config="true" duration-ms="51" started-at="2019-12-19T09:45:42Z" finished-at="2019-12-19T09:45:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- qa.com.test.testcases.LoginTestcase -->
+      <class name="qa.com.test.testcases.SellerOnboardingTestcase">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:qa.com.test.testcases.SellerOnboardingTestcase@36f6e879]" name="beforeTest" is-config="true" duration-ms="8086" started-at="2019-12-19T09:45:42Z" finished-at="2019-12-19T09:45:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="sellerOnboardingUsingDataBaseskill()[pri:0, instance:qa.com.test.testcases.SellerOnboardingTestcase@36f6e879]" name="sellerOnboardingUsingDataBaseskill" duration-ms="49094" started-at="2019-12-19T09:45:50Z" finished-at="2019-12-19T09:46:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sellerOnboardingUsingDataBaseskill -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:qa.com.test.testcases.SellerOnboardingTestcase@36f6e879]" name="afterTest" is-config="true" duration-ms="84" started-at="2019-12-19T09:46:39Z" finished-at="2019-12-19T09:46:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- qa.com.test.testcases.SellerOnboardingTestcase -->
+      <class name="qa.com.test.testcases.BuyerRegistrationTestcase">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:qa.com.test.testcases.BuyerRegistrationTestcase@531be3c5]" name="beforeTest" is-config="true" duration-ms="8406" started-at="2019-12-19T09:46:39Z" finished-at="2019-12-19T09:46:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="buyerRegistrationNonasIndividual()[pri:0, instance:qa.com.test.testcases.BuyerRegistrationTestcase@531be3c5]" name="buyerRegistrationNonasIndividual" duration-ms="45184" started-at="2019-12-19T09:46:48Z" finished-at="2019-12-19T09:47:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyerRegistrationNonasIndividual -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:qa.com.test.testcases.BuyerRegistrationTestcase@531be3c5]" name="afterTest" is-config="true" duration-ms="68" started-at="2019-12-19T09:47:33Z" finished-at="2019-12-19T09:47:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- qa.com.test.testcases.BuyerRegistrationTestcase -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite1 -->
+</testng-results>

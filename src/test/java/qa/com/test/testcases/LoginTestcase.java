@@ -16,8 +16,8 @@ public class LoginTestcase extends Baseclass {
 	// MANUL LOGIN TESTCASE
 	
 	
-	@Test
 
+@Test
 	public static void LoginManualEmailPasswordcorrect() throws InterruptedException, IOException {
 
 	       LoginManualEmailPasswordOnboard();
@@ -46,8 +46,8 @@ public class LoginTestcase extends Baseclass {
 
 	// FACEBOOK LOGIN TESTCASE
 
-	@Test
-	public static void EmailFacebookLogin() throws IOException {
+@Test
+	public static void EmailFacebookLogin() throws IOException, InterruptedException {
 
 		TestData testData = new TestData();
 		ArrayList<String> getFacebookDataList = testData.dataSetUp("FacebookLoginCredentials","Login");
@@ -66,7 +66,7 @@ public class LoginTestcase extends Baseclass {
 
 
  @Test
-	public static void GoogleLoginTestcase() throws IOException {
+	public static void GoogleLoginTestcase() throws IOException, InterruptedException {
 
 	
 	  TestData testData = new TestData();
@@ -81,9 +81,8 @@ public class LoginTestcase extends Baseclass {
 	 
 	 
  }
-	 
-	 
- public static void GoogleLoginBuyerRegistration() throws IOException {
+
+ public static void GoogleLoginBuyerRegistration() throws IOException, InterruptedException {
 
 		
 	  TestData testData = new TestData();
